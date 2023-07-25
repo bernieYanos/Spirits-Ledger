@@ -1,0 +1,128 @@
+:root {
+  --white: #fff;
+  --bg-color: #5e503f;
+  --accent-color: #a9927d;
+  --button-color: #531b26;
+  --button-hover-color: #49111c;
+  --button-active-color: #3f0712;
+}
+
+.bg_bottom_right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.bg_bottom_left {
+  position: fixed;
+  bottom: -35%;
+  left: -2%;
+  z-index: -1;
+}
+
+.bg {
+  background-color: #000;
+}
+
+.lounge_bg {
+  background: url('img/lounge_bg_resized.jpg');
+}
+
+.bourbon_bg {
+  background: url('img/bourbon_bg.png');
+}
+
+.cocktail_bg {
+  background: url('img/cocktail_bg.jpg');
+}
+
+.wine_bg {
+  background: url('img/wine_bg.jpg');
+}
+
+.addspirits_bg {
+  background: url('img/addspirits_bg.jpg');
+}
+
+.addspirits {
+  margin-top: 5rem;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+.card {
+  background-color: rgba(150, 150, 150, 0);
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-color: var(--white);
+  --bs-accordion-active-bg: var(--accent-color);
+}
+
+.accordion-button {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
+.accordion-item {
+  background: var(--bg-color);
+  color: var(--white);
+  border: none;
+}
+
+.accordion-item th {
+  color: var(--button-color);
+}
+
+.accordion-item td {
+  color: var(--white);
+}
+
+.qty {
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+#addSpiritBtn {
+  --bs-btn-color: rgba(255, 255, 255, 0.55);
+  --bs-btn-hover-color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--white);
+  --bs-btn-bg: var(--button-color);
+  --bs-btn-border-color: var(--button-color);
+  --bs-btn-hover-color: var(--white);
+  --bs-btn-hover-bg: var(--button-hover-color);
+  --bs-btn-hover-border-color: var(--button-hover-color);
+  --bs-btn-focus-shadow-rgb: var(--button-color);
+  --bs-btn-active-color: var(--white);
+  --bs-btn-active-bg: var(--button-active-color);
+  --bs-btn-active-border-color: var(--button-active-color);
+}
+
+form label {
+  color: #fff;
+  padding-top: 0.5rem;
+}
+
+.formbtns {
+  padding-top: 0.5rem;
+}
+
+.new-form-element {
+  padding-top: 0.5rem;
+}
