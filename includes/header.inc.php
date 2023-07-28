@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top mask-custom shadow-0">
   <div class="container-fluid">
     <a class="navbar-brand" href="lounge.php">
-      <span style="color: #5389b8">The</span>
-      <span style="color: #fff">Lounge</span></a>
+      <span style="color: #5389b8">Spirits</span>
+      <span style="color: #fff">Ledger</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
