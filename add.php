@@ -2,12 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Add Spirit | The Lounge</title>
+  <title>Add Spirit | Spirits Ledger</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <?php include 'includes/head.inc.php' ?>
-  <script src="js/addSpirit.js"></script>
 </head>
 
 <header>
@@ -81,6 +80,9 @@
       </div>
     </div>
   </div>
+
+  <?php include 'includes/js.inc.php' ?>
+  <script src="/js/addSpirit.js"></script>
 </body>
 
 </html>
