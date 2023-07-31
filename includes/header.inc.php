@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top mask-custom shadow-0">
   <div class="container-fluid">
-    <a class="navbar-brand" href="lounge.php">
+    <a class="navbar-brand" href="spirits-ledger.php">
       <span style="color: #5389b8">Spirits</span>
       <span style="color: #fff">Ledger</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,11 +20,13 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
             <li><a class="dropdown-item" href="#">Status</a></li>
-            <li><a class="dropdown-item" href="whitewine.php">White</a></li>
+            <li><a class="dropdown-item" href="white-wine.php">White</a></li>
             <li><a class="dropdown-item" href="#">Red</a></li>
             <li><a class="dropdown-item" href="#">Blush</a></li>
           </ul>
         </li>
+      </ul>
+      <ul class="navbar-nav d-flex flex-row me-1">
         <li class="nav-item">
           <a id="addSpiritBtn" class="btn btn-primary" href="add.php" role="button">Add Spirit</a>
         </li>
