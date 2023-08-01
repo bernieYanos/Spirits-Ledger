@@ -6,7 +6,6 @@ CREATE TABLE Product (
   Sub_Category_ID INT(9) NOT NULL,
   Product_Description LONGTEXT,
   Source_ID INT(9),
-  Acquire_Date DATE,
   Vintage VARCHAR(255),
   Product_Image_Path VARCHAR(255),
   CONSTRAINT Product_PK PRIMARY KEY (Product_ID),
@@ -23,7 +22,6 @@ INSERT INTO
     `Sub_Category_ID`,
     `Product_Description`,
     `Source_ID`,
-    `Acquire_Date`,
     `Vintage`,
     `Product_Image_Path`
   )
@@ -35,7 +33,6 @@ VALUES
     1,
     'Our Blue Crab Blanc is part of our new Chesapeake Series of wines. The label showcases the blue crab, an iconic symbol from our Chesapeake Bay region. These wines are are made to pair with local seafoods or be enjoyed on their own.\r\n\r\nServe with white meats and seafood. With a slightly sweet finish, this wine also makes a great aperitif!',
     1,
-    '2023-01-01',
     null,
     'blueCrab.jpg'
   ),
@@ -46,7 +43,6 @@ VALUES
     1,
     'Our 2021 Albari&ntilde;o was produced from just over four acres of vines from three vineyard sites on our property. Our most established Albari&ntilde;o vines are over ten years old, and newer vines have been planted in recent years.\r\n\r\nThis fruit-forward wine has a refreshing acidity and will pair well with local seafoods, especially oysters.',
     1,
-    '2023-01-01',
     '2021',
     'albarino.jpg'
   );
