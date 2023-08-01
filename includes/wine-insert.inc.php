@@ -23,7 +23,7 @@ if ($exists > 0) {
       echo '<div class="accordion-body">';
       echo '<div class="container">';
       echo '<div class="row">';
-      echo '<div class="col"><img src="img/' . $row["Product_Image_Path"] . '" class="img-fluid"></div>';
+      echo '<div class="col"><img src="uploads/' . $row["Product_Image_Path"] . '" class="img-fluid"></div>';
       echo '<div class="col-8">';
       echo '<p class="mb-2">' . nl2br($row["Product_Description"]) . '</p>';
       echo '<table class="table">';
