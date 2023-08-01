@@ -19,10 +19,9 @@
             Wine Cellar
           </a>
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Status</a></li>
             <li><a class="dropdown-item" href="white-wine.php">White</a></li>
-            <li><a class="dropdown-item" href="#">Red</a></li>
-            <li><a class="dropdown-item" href="#">Blush</a></li>
+            <li><a class="dropdown-item" href="red-wine.php">Red</a></li>
+            <li><a class="dropdown-item" href="blush-wine.php">Blush</a></li>
           </ul>
         </li>
       </ul>
