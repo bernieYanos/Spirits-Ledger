@@ -1,5 +1,5 @@
 function addNewOption() {
-  var selectField = document.getElementById('spiritName');
+  var selectField = document.getElementById('productID');
   var selectedOption = selectField.options[selectField.selectedIndex].value;
   var newOptionContainer = document.getElementById('newOption');
 
@@ -7,7 +7,7 @@ function addNewOption() {
     var newInput = document.createElement('input');
     newInput.type = 'text';
     newInput.classList = 'form-control';
-    newInput.name = 'spiritName';
+    newInput.name = 'newSpirit';
     newInput.id = 'newOptionInput';
     newInput.placeholder = 'Enter name';
     newOptionContainer.appendChild(newInput);

@@ -22,9 +22,9 @@
       <div class="col-lg-4">
         <form method="POST" action="addspirit.php" enctype="multipart/form-data" class="clearForms" id="addSpiritForm">
           <div class="form-group">
-            <label class="form-label" for="spiritName">Name:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="spiritName" id="spiritName" onchange="addNewOption()">
-              <option value="notAnOption">Select the spirit or add a new one</option>
+            <label class="form-label" for="productID">Name:</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="productID" id="productID" onchange="addNewOption()" required>
+              <option value="notAnOption">Select a spirit or add a new one</option>
               <?php include 'includes/spirit-options.inc.php' ?>
               <option value="Add new">Add new</option>
             </select>
@@ -35,17 +35,17 @@
             <input class="form-control" type="number" name="quantity" id="quantity" value="1">
           </div>
           <div class="form-group">
-            <label class="form-label" for="type">Type:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="type" id="type">
-              <option selected>Choose type</option>
-              <option value="Wine">Wine</option>
+            <label class="form-label" for="categoryID">Category:</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="categoryID" id="categoryID" required>
+              <option selected>Choose category</option>
+              <option value="1">Wine</option>
             </select>
           </div>
           <div class="form-group">
-            <label class="form-label" for="subtype">Sub Type:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="subtype" id="subtype">
-              <option selected>Choose type</option>
-              <option value="White">White</option>
+            <label class="form-label" for="subCategoryID">Sub Category:</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="subCategoryID" id="subCategoryID" required>
+              <option selected>Choose sub category</option>
+              <option value="1">White</option>
             </select>
           </div>
           <div class="form-group">
@@ -53,12 +53,11 @@
             <textarea class="form-control" name="description" id="description" rows="3"></textarea>
           </div>
           <div class="form-group">
-            <label class="form-label" for="acquirelocation">Acquire Location:</label>
-            <input type="text" class="form-control" id="acquirelocation" name="acquirelocation" placeholder="Enter location name">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="date">Acquire Date:</label>
-            <input class="form-control" type="date" name="date" id="date">
+            <label class="form-label" for="producer">Producer:</label>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="producer" id="producer" required>
+              <option selected>Choose producer</option>
+              <option value="1">Ingleside Vineyards</option>
+            </select>
           </div>
           <div class="form-group">
             <label class="form-label" for="vintage">Vintage:</label>
