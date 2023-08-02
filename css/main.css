@@ -5,6 +5,7 @@
   --button-color: #531b26;
   --button-hover-color: #49111c;
   --button-active-color: #3f0712;
+  --secondary-header-color: #592311;
 }
 
 .bg_bottom_right {
@@ -92,6 +93,11 @@
 
 .accordion-item td {
   color: var(--white);
+}
+
+.accordion-table-data {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .table {
