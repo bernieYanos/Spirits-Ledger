@@ -13,7 +13,7 @@
   <?php include 'includes/header.inc.php' ?>
 </header>
 
-<body class="bg" onload="clearForms()">
+<body class="bg">
   <div class="bg_bottom_left">
     <img src="img/addspirits_bg.jpg" alt="">
   </div>
@@ -23,58 +23,34 @@
         <form method="POST" action="addspirit.php" enctype="multipart/form-data" class="clearForms" id="addSpiritForm">
           <div class="form-group">
             <label class="form-label" for="productID">Name:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="productID" id="productID" onchange="addNewOption()" required>
-              <option value="notAnOption">Select a spirit or add a new one</option>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="productID" id="productID" required>
+              <option value="notAnOption" selected>Select a spirit or add a new one</option>
               <?php include 'includes/spirit-options.inc.php' ?>
               <option value="Add new">Add new</option>
             </select>
           </div>
           <div class="form-group" id="newOption"></div>
-          <div class="form-group">
-            <label class="form-label" for="quantity">Quantity:</label>
-            <input class="form-control" type="number" name="quantity" id="quantity" value="1">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="categoryID">Category:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="categoryID" id="categoryID" required>
-              <option selected>Choose category</option>
-              <option value="1">Wine</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="subCategoryID">Sub Category:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="subCategoryID" id="subCategoryID" required>
-              <option selected>Choose sub category</option>
-              <option value="1">White</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="description">Description:</label>
-            <textarea class="form-control" name="description" id="description" rows="3"></textarea>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="producer">Producer:</label>
-            <select class="form-select form-select-sm" aria-label=".form-select-sm" name="producer" id="producer" required>
-              <option selected>Choose producer</option>
-              <option value="1">Ingleside Vineyards</option>
-            </select>
-          </div>
-          <div class="form-group">
+          <div class="form-group" id="quantityContainer"></div>
+          <div class="form-group" id="categoryContainer"></div>
+          <div class="form-group" id="subCategoryContainer"></div>
+          <div class="form-group" id="descriptionContainer"></div>
+          <div class="form-group" id="producerContainer"></div>
+          <!-- <div class="form-group">
             <label class="form-label" for="vintage">Vintage:</label>
             <input type="text" class="form-control" id="vintage" name="vintage" placeholder="Enter year">
-          </div>
-          <div class="form-group">
+          </div> -->
+          <!-- <div class="form-group">
             <label class="form-label" for="varietal">Varietal:</label>
             <input type="text" class="form-control" id="varietal" name="varietal" placeholder="Enter varietal information">
-          </div>
-          <div class="form-group">
+          </div> -->
+          <!-- <div class="form-group">
             <label for="file" class="form-label">Picture:</label>
             <input class="form-control" type="file" id="file" name="file">
-          </div>
-          <div class="form-group formbtns">
+          </div> -->
+          <!-- <div class="form-group formbtns">
             <button type="submit" class="btn btn-primary">Submit</button>
             <button type="reset" class="btn btn-primary">Clear</button>
-          </div>
+          </div> -->
         </form>
       </div>
     </div>
