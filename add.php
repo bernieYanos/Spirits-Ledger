@@ -57,7 +57,7 @@
   </div>
 
   <?php include 'includes/js.inc.php' ?>
-  <script src="/js/addSpirit.js"></script>
+  <script src="js/addSpirit.js"></script>
 </body>
 
 </html>
